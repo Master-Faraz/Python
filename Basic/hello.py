@@ -1,0 +1,5 @@
+c=int(input("Enter three numbers"))
+z=(c)
+print("hello")
+print(z) 
+print(f"this is {c}")
