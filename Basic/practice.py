@@ -1,15 +1,24 @@
-import math as mt
+t = int(input())
+ls = []
 
-def prime(n):
-    if n==1:
-        return False
-    x=mt.floor(mt.sqrt(n))
-    for i in range(2,x+1):
-        if(n%i==0):
-            return False
-    return True
+while(t):
+    res = 0
+    l = 0
+    n, x = input().split(" ")
+    n = int(n)
+    x = int(x)
 
+    for i in range(n):
+        a = int(input())
+        if a not in ls:
+            ls.append(a)
 
+    res = n-x
+    l = len(ls)
 
-a=int(input("Enter a number : "))
-print(prime(a))
+    if res <= l:
+        print(res)
+    else:
+        print(l)
+
+    t = t-1
