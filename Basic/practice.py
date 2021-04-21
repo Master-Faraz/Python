@@ -13,6 +13,8 @@ while(t):
         if a not in ls:
             ls.append(a)
 
+            
+
     res = n-x
     l = len(ls)
 
