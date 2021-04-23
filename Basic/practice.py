@@ -12,9 +12,7 @@ while(t):
         a = int(input())
         if a not in ls:
             ls.append(a)
-
             
-
     res = n-x
     l = len(ls)
 
