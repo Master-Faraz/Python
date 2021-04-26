@@ -3,6 +3,8 @@ a = {
     "Class": 2,
     "Age": 30
 }
+
+
 # for i in a.values():
 #     print(i)
 
