@@ -9,6 +9,8 @@ a = {
 #     print(i)
 
 
+
+
 x=map(lambda x: x,a.values())
 for i in x:
     print(i)
