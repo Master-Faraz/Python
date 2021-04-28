@@ -1,27 +1,3 @@
-a=int(input("Enter number of commands : "))
-n=[]
-for i in range(a):
-    x=input("Enter command : ").split(" ")
-    b=x[0] 
-    if b=="insert":
-        n.insert(int(x[1]),int(x[2]))
-
-    if b=="print":
-        print(n)
-
-    if b=="remove":
-        n.remove(int(x[1]))
-
-    if b=="append":
-        n.append(int(x[1]))
-
-    if b=="sort":
-        n.sort()
-
-    if b=="reverse":
-        n.reverse()
-
-    if b=="pop":
-        n.pop()
-        
-     
+a=[1,2,3,4,5,6,7,8,9,10]
+for i in a:
+    print(i+1)
