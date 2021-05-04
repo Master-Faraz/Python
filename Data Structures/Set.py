@@ -1,7 +1,5 @@
 first_set = {1, 2, 3, 4, 5}
-
 num = [3, 4, 5, 6, 7, 8]
-
 second_set = set(num)
 
 # print(type(num))
