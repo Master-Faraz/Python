@@ -3,8 +3,8 @@ import numpy as np
 arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], np.int64)
 
 
-# print(arr[0])
-# print(arr.dtype)
+print(arr[0])
+print(arr.dtype)
 
 """
 np.int64 is dtype of our array  -->  By Default it is int32
@@ -13,36 +13,36 @@ np.int64 is optional
 """
 arr_2D = np.array([[1, 2, 3], [3, 4, 5], [5, 6, 7]])  # 2D Array
 
-# print(arr_2D.shape)     #    Shape will return Dimension of array
-# print(arr_2D.dtype)
-# print(arr_2D.dtype)
+print(arr_2D.shape)     #    Shape will return Dimension of array
+print(arr_2D.dtype)
+print(arr_2D.dtype)
 
 
 arr_zero = np.zeros((2, 5))
-# print(arr_zero.shape)  #  2,5
-# print(arr_zero.dtype)  # float64
-# print(arr_zero.size)   # 10
+print(arr_zero.shape)  #  2,5
+print(arr_zero.dtype)  # float64
+print(arr_zero.size)   # 10
 
 arr_range = np.arange(15)
-# print(arr_range)  # 0~14
-# print(arr_range.dtype)   # Int 64
+print(arr_range)  # 0~14
+print(arr_range.dtype)   # Int 64
 
 arr_line = np.linspace(1, 20, 35)
-# print(arr_line)
-# print(arr_line.dtype)   # Float64
-# print(arr_line.size)   # 35
+print(arr_line)
+print(arr_line.dtype)   # Float64
+print(arr_line.size)   # 35
 
 arr_empty = np.empty((4, 6))
-# print(arr_empty)
-# print(arr_empty.dtype)
+print(arr_empty)
+print(arr_empty.dtype)
 
 arr_like = np.empty_like(arr)
-# print(arr_like)
-# print(arr_like.dtype)
+print(arr_like)
+print(arr_like.dtype)
 
 arr_Identity_matrix = np.identity(10)
-# print(arr_Identity_matrix)
-# print(arr_Identity_matrix.dtype)
+print(arr_Identity_matrix)
+print(arr_Identity_matrix.dtype)
 
 
 """
@@ -61,7 +61,65 @@ np.identity(10)   -->  Creates identity matrix of size 10*10   ,   Dtype  -> flo
 """
 
 
-arr=np.arange(99)
-arr=arr.reshape(3,33)   #   It reshapes the 1d-array to form 2d-array
-arr=arr.ravel()
+arr = np.arange(99)
+arr = arr.reshape(3, 33)           # It reshapes the 1d-array to form 2d-array
+arr = arr.ravel()                # Change back to 1d-array
 print(arr)
+
+
+"""
+Axis in numpy is like dimensions in Matrix         2  3  4
+                                                   4  5  6
+                                                   7  8  9
+
+axis=0  --> Horizontal Part
+axis=1  --> Vertical Part
+
+"""
+
+x = arr_2D.sum(axis=0)      # Sum of column ( Horizontal )
+print(arr_2D)
+print("\n")
+print(x)
+
+x = arr_2D.sum(axis=1)      # Sum of rows ( Vertical )
+print(x)
+
+print(arr_2D)
+print(arr_2D.T)           # Arr.T    --> Transposes the array
+print(arr_2D.ndim)     #  Returns number of dimensions
+print(arr_2D.nbytes)     #  Returns Total number of Bytes consumed by array
+
+
+print(arr.argmax())    #  Returns index of max element  in 1 Dimension Array
+print(arr.argmin())    #  Returns index of min element  in 1 Dimension Array
+
+
+print(arr_2D.argmax(axis=0))    # Returns index
+print(arr_2D.argmax(axis=1))    # Returns index
+
+print(arr_2D.argmax())  #   It converts 2d array to 1d array and then returns index
+
+
+"""
+                            Operations in Array
+
+"""
+
+x = np.arange(10)
+y = np.arange(10, 20)
+
+print(x)
+print(y)
+print()
+
+print(x+y)      # Addition of array
+print(x*y)      # Multiplication of array
+print(np.sqrt(x))     # Finding Square root
+
+print(x.max())
+print(x.min())
+print(x.sum())
+
+z=np.where(x>8)    #  Returns index of condition
+print(z)
