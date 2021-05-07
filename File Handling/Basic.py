@@ -38,5 +38,19 @@
 # print(f.readline())  # .                  It reads line by line
 # print(f.readline())  # .                  It reads line by line
 
+# f.close()
+
+
+"""                             Writting and Appending
+
+Writting mode   ->      Overwrites the file
+
+Append          ->      Add to the last
+
+"""
+
+f = open('pract.txt', "wt")  # .                  We can also use w
+
+f.write("This is over writted file")
 
 f.close()
