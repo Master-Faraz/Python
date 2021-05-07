@@ -49,8 +49,34 @@ Append          ->      Add to the last
 
 """
 
-f = open('pract.txt', "wt")  # .                  We can also use w
+# f = open('pract.txt', "wt")  # .                  We can also use w
 
-f.write("This is over writted file")
+# f.write("This is over writted file")
 
-f.close()
+# f.close()
+
+
+# f = open('pract.txt',"a")   #.          Appending file
+
+# f.write("\nThis is Apended file \n")
+
+# f.close()
+
+
+# f = open('pract.txt', "r+")  # .              Reading and writting mode  " r+ "
+
+# print(f.read())
+# f.write("Thanks")  # .                  Appending to the last
+
+# f.close()
+
+"""
+#  With block opens file and closes it automatically --> 
+
+with open('new.txt','rt')  as f: 
+    print(f.readline()) 
+
+"""
+
+with open("pract.txt", "rt") as f:
+    print(f.readlines())
