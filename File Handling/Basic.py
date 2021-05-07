@@ -78,5 +78,5 @@ with open('new.txt','rt')  as f:
 
 """
 
-with open("pract.txt", "rt") as f:
-    print(f.readlines())
+# with open("pract.txt", "rt") as f:
+#     print(f.readlines())
