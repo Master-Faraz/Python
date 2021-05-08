@@ -1,7 +1,16 @@
-ls=[1,2,3,4,5,6,7,8,9]
+def fun(a,b):
+    return a+b
 
-m=list(map((lambda x:x*x),ls))
-print(m)
+@fun
+def mod_fun(func):
 
-f=list(filter((lambda x: x*x>25),ls))
-print(f)
+    def another(*args,**kwargs):
+        print("Started")
+        v=func(*args,**kwargs)
+        print("End")
+        return v
+
+    return another
+    
+
+print(mod_fun(5,6))
