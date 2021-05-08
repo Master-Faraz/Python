@@ -1,12 +1,6 @@
-n = int(input("Enter size of list you want to create : "))
-ls = []
+choice = int(input("Press 1 for Enter Data or Press 2 For Retriving data : "))
 
-for i in range(n):
-    a = int(input(f"Enter {i} th Number : "))
-    ls.append(a)
-
-s = set(ls)
-ls = list(s)
-ls.sort(reverse=True)
-
-print(ls)
+if choice == 1:
+    name=input("Enter your name : ")
+    data=int(input("Enter 1 for EXERCISE  or Enter 2 for Diet "))
+    name=name.capitalize()
