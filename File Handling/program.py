@@ -40,7 +40,6 @@ if choice == 1:  # .                      For Setting Data
                 print("\t\t***  Written Successfully  ***\t\t")
 
 
-
 if choice == 2:  # .                      For Getting Data
 
     name = input("Enter your name : ")
@@ -49,18 +48,18 @@ if choice == 2:  # .                      For Getting Data
 
     if n == "FARAZ":
         if data == 1:
-            with open("Faraz_Exercise.txt", "a") as f:
+            with open("Faraz_Exercise.txt", "rt") as f:
                 print(f.readlines())
 
         elif data == 2:
-            with open("Faraz_Diet.txt", "a") as f:
+            with open("Faraz_Diet.txt", "rt") as f:
                 print(f.readlines())
 
     if n == "ADAM":
         if data == 1:
-            with open("Adam_Exercise.txt", "a") as f:
+            with open("Adam_Exercise.txt", "rt") as f:
                 print(f.readlines())
 
         elif data == 2:
-            with open("Adam_Diet.txt", "a") as f:
+            with open("Adam_Diet.txt", "rt") as f:
                 print(f.readlines())

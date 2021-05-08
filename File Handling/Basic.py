@@ -17,12 +17,12 @@
 """
 
 
-# f = open('pract.txt',"rt")  # .          Opening File
+f = open('pract.txt',"rt")  # .          Opening File
 
-# content = f.read()  # .          Returns full line
-# print(content)
+content = f.read()  # .          Returns full line
+print(content)
 
-# f.close()  # .          File must be closed
+f.close()  # .          File must be closed
 
 
 """                             File Opening
@@ -58,7 +58,7 @@ Append          ->      Add to the last
 
 # f = open('pract.txt',"a")   #.          Appending file
 
-# f.write("\nThis is Apended file \n")
+# f.write("\nThis is Apended file 2 \n")
 
 # f.close()
 
