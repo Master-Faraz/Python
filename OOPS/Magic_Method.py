@@ -1,5 +1,9 @@
 class container:
 
+    # def __new__(self):  # .                  it always called before __init__  constructor
+        # .                  Here init has only one parameter so we give only one parameter to __new__
+        # print("The object is getting initialized")
+
     def __init__(self):
         self.Dictionary = {}
 
@@ -23,7 +27,8 @@ class container:
         return len(self.Dictionary)
 
     def __iter__(self):
-        return iter(self.Dictionary)    #.                  iter is built in function
+        # .                  iter is built in function returns iterator object
+        return iter(self.Dictionary)
 
 
 obj = container()
@@ -43,6 +48,5 @@ obj.add("hello")
 # print(obj.__len__())    #.                      It is used to print the length using  __len__
 
 
-for i in obj.__iter__():
-    print(i)
-
+# for i in obj.__iter__():    #.                  using __iter__
+#     print(i)
