@@ -11,6 +11,7 @@ if choice == 1:  # .                      For Setting Data
 
     name = input("Enter your name : ")
     data = int(input("Enter 1 for EXERCISE  or Enter 2 for Diet "))
+
     n = name.upper()
 
     if n == "FARAZ":
