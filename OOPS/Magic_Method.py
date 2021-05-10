@@ -37,16 +37,16 @@ obj.add("Hello")
 obj.add("Hello")
 obj.add("Hello")
 obj.add("hello")
-# # print(obj.Dictionary)
+# print(obj.Dictionary)
 
-# print(obj["Hello"])  # .    using  __getitem__
+print(obj["Hello"])  # .    using  __getitem__
 
-# obj["Hello"] = 5  # .    using  __setitem__
+obj["Hello"] = 5  # .    using  __setitem__
 
-# print(obj["Hello"])
+print(obj["Hello"])
 
-# print(obj.__len__())    #.                      It is used to print the length using  __len__
+print(obj.__len__())    #.                      It is used to print the length using  __len__
 
 
-# for i in obj.__iter__():    #.                  using __iter__
-#     print(i)
+for i in obj.__iter__():    #.                  using __iter__
+    print(i)
