@@ -1,16 +1,17 @@
-def fun(a,b):
-    return a+b
+class Employee:
+    no_of_leaves = 10
 
-@fun
-def mod_fun(func):
+    def __init__(self,name,salary):
+        self.name=name
+        self.salary=salary
+        
 
-    def another(*args,**kwargs):
-        print("Started")
-        v=func(*args,**kwargs)
-        print("End")
-        return v
+    def print_details(self):
+        return(f"Name is {self.name} and its salary is {self.salary}")
 
-    return another
-    
 
-print(mod_fun(5,6))
+F=Employee("Faraz",1000000)
+A=Employee("Adam",9999999)
+
+print(F.print_details())
+print(A.print_details())
