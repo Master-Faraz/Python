@@ -1,6 +1,9 @@
 class Employee:
     no_of_leaves = 10  # .           Class Variable
 
+    _protectedVAR=50    #.      Protected Var starts with _
+    __PrivateVAR=100    #.      Private var starts with __
+
     def __init__(self, name, salary):  # .                    Constructor
         self.name = name
         self.salary = salary
@@ -17,7 +20,7 @@ class Employee:
     def Alternative_Constructor(cls, string):
         # .  Here *string.split('-') is ARGS splitted by '-'
         return cls(*string.split('-'))
-        # .          cls(*string.split('-'))  ->      Returns list
+        # .          *string.split('-')  ->      Returns list
 
 
 F = Employee("Faraz", 1000000)
@@ -41,5 +44,9 @@ A = Employee("Adam", 9999999)
 # print(A.no_of_leaves) #.      OP -> 50
 
 
-Arshad = Employee.Alternative_Constructor("Arshad alam-19919991") #.    Creating Object using Classmethod
-print(Arshad.print_details())
+# Arshad = Employee.Alternative_Constructor("Arshad alam-19919991") #.    Creating Object using Classmethod
+# print(Arshad.print_details())
+
+print(F._protectedVAR)  #.          we can print protected var but not private directly
+# print(F.__PrivateVAR)
+print(F._Employee__PrivateVAR)
