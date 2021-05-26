@@ -145,6 +145,7 @@ z = np.where(x > 8)  # Returns index of condition
 
 #                   *****       Joining Numpy Arrays        *****
 
+
 np.vstack((x, y))                   # Creates vertical Stack
 np.hstack((x, y))                   # Creates Horizontal Stack
 np.column_stack((x, y))             # Creates Stack of columns
