@@ -124,13 +124,15 @@ y = np.arange(8, 18, 1)  # From 10 to 20 in step of 1
 # x = x+5           #         Adding 5 to each element
 # x = x*5           #         Multiplying 5 to each element of array
 
-# print(np.sin(x))        #       Sin , Cos , tan , log
-# print(np.sort(x))       #       Sorting an array
+print(np.sin(x))        #       Sin , Cos , tan , log
+print(np.sort(x))       #       Sorting an array
 
 
-# print(x.max())
-# print(x.min())
-# print(x.sum())
+print(x.max())
+print(x.min())
+print(x.sum())
+
+
 
 z = np.where(x > 8)  # Returns index of condition
 # print(z)
