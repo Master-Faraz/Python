@@ -31,4 +31,6 @@ test_y=np.array(test_y)
 # print(train_x)
 
 reg = LinearRegression()
+
+
 reg.fit([train_x],train_y)
