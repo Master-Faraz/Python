@@ -1,32 +1,37 @@
-# import numpy as np
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# from sklearn.linear_model import LinearRegression
-
-# d = {
-#     'x': [1, 2, 3, 4, 5],
-#     'y': [2, 4, 5, 4, 5]
-# }
-
-# df= pd.DataFrame(d)
-
-# x = df.iloc[:,0].values.reshape(5,1)
-# y = df.iloc[:,1].values
+# help(round(2.5))       #.               Returns Help
 
 
-# reg=LinearRegression()
-# reg.fit(x,y)
+def fun(a,b):
+    """\nUsing Dockstrings \t This function returns sum """
+    return a+b
 
-# print(reg.predict([[2.5]]))    #   Predicting from input
+# help(fun(1,2))
 
-# print(reg.predict(x))    #   Predicting values of y_pred from x
+""" **************************************************************************************************** """
 
-# y_pred = reg.predict(x)
+# def mult_by_five(x):
+#     return 5 * x
 
-# plt.scatter(x,y)    #   Scatter plot of actual x and y
-# plt.plot(x,y_pred,color ='r',marker='d')     #   Best fit line of x and Y_pred
-# plt.show()
 
-color = "RED"
-print(color)
+# def call(fn, arg):
+#     """Call fn on arg"""
+#     return fn(arg)
+
+
+# def squared_call(fn, arg):
+#     """Call fn on the result of calling fn on arg"""
+#     return fn(fn(arg))
+
+
+# print(
+#     call(mult_by_five, 1),
+#     squared_call(mult_by_five, 1),
+#     sep='\n',  # '\n' is the newline character - it starts a new line
+# )
+
+
+
+
+print(abs(10))
+print(abs(-5))
 
