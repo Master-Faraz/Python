@@ -6,6 +6,7 @@ if b==0:
     while a!=0:
         print("*"*a)
         a-=1
+        
 elif b==1:
     for i in range(a+1):
         print("*"*i)
