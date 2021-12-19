@@ -1,37 +1,26 @@
-# help(round(2.5))       #.               Returns Help
+a_string = "0abc 155 def 23"
 
 
-def fun(a,b):
-    """\nUsing Dockstrings \t This function returns sum """
-    return a+b
+numbers = []
+total = 0
 
-# help(fun(1,2))
+for word in a_string.split():
 
-""" **************************************************************************************************** """
-
-# def mult_by_five(x):
-#     return 5 * x
+    if word.isdigit():
+        numbers.append(int(word))
 
 
-# def call(fn, arg):
-#     """Call fn on arg"""
-#     return fn(arg)
+for i in range(0, len(numbers)):
+    total += numbers[i]
 
+print(a_string)
+print(numbers)
+print(total)
 
-# def squared_call(fn, arg):
-#     """Call fn on the result of calling fn on arg"""
-#     return fn(fn(arg))
+# s = input()
+# s1 = ''
+# for i in s:
+#     if type(i) != int:
+#         s1+=i
 
-
-# print(
-#     call(mult_by_five, 1),
-#     squared_call(mult_by_five, 1),
-#     sep='\n',  # '\n' is the newline character - it starts a new line
-# )
-
-
-
-
-print(abs(10))
-print(abs(-5))
-
+# print(s1)
